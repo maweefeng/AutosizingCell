@@ -8,8 +8,8 @@
 
 #import "AutoSizingCell.h"
 @interface AutoSizingCell()
-@property(nonatomic,assign)NSLayoutConstraint * leadingConstraint;
-@property(nonatomic,assign)NSLayoutConstraint * trailingConstraint;
+@property(nonatomic,strong)NSLayoutConstraint * leadingConstraint;
+@property(nonatomic,strong)NSLayoutConstraint * trailingConstraint;
 @end
 
 
@@ -57,7 +57,7 @@
 -(void)setIsIncoming:(BOOL)isIncoming{
     
     _isIncoming = isIncoming;
-    self.bubuleView.backgroundColor = isIncoming ? [UIColor whiteColor] : [UIColor darkGrayColor];
+    self.bubuleView.backgroundColor = isIncoming ? [UIColor whiteColor] : [UIColor greenColor];
     if (isIncoming) {
         self.leadingConstraint.active = YES;
         self.trailingConstraint.active = NO;

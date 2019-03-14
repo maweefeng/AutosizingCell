@@ -14,6 +14,7 @@
 		92C110962238FA8600933084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C110942238FA8600933084 /* LaunchScreen.storyboard */; };
 		92C110992238FA8600933084 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C110982238FA8600933084 /* main.m */; };
 		92C110A12238FC8E00933084 /* AutoSizingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C110A02238FC8D00933084 /* AutoSizingCell.m */; };
+		92C110A4223A1D2D00933084 /* SectionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C110A3223A1D2D00933084 /* SectionLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		92C110982238FA8600933084 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92C1109F2238FC8D00933084 /* AutoSizingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoSizingCell.h; sourceTree = "<group>"; };
 		92C110A02238FC8D00933084 /* AutoSizingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoSizingCell.m; sourceTree = "<group>"; };
+		92C110A2223A1D2D00933084 /* SectionLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionLabel.h; sourceTree = "<group>"; };
+		92C110A3223A1D2D00933084 /* SectionLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				92C1108A2238FA8000933084 /* AppDelegate.m */,
 				92C1108C2238FA8000933084 /* ViewController.h */,
 				92C1108D2238FA8000933084 /* ViewController.m */,
+				92C110A2223A1D2D00933084 /* SectionLabel.h */,
+				92C110A3223A1D2D00933084 /* SectionLabel.m */,
 				92C1109F2238FC8D00933084 /* AutoSizingCell.h */,
 				92C110A02238FC8D00933084 /* AutoSizingCell.m */,
 				92C1108F2238FA8000933084 /* Main.storyboard */,
@@ -146,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C110A4223A1D2D00933084 /* SectionLabel.m in Sources */,
 				92C110A12238FC8E00933084 /* AutoSizingCell.m in Sources */,
 				92C1108E2238FA8000933084 /* ViewController.m in Sources */,
 				92C110992238FA8600933084 /* main.m in Sources */,

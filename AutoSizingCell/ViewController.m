@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AutoSizingCell.h"
+#import "SectionLabel.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,copy)NSArray *textArr;
 @end
@@ -17,7 +18,7 @@ static NSString * identifier = @"id";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.textArr = @[@"hey man,i see you at KFC in the morning and i told to you find that is not you ,actually it is davin and lucy",@"oh in the morning i was in my house watching tv with my girl friend",@"oh i was wrong"];
+    self.textArr = @[@"Hey man,i see you at KFC in the morning and i told to you find that is not you ,actually it is davin and lucy",@"oh in the morning i was in my house watching tv with my girl friend",@"oh i was wrong",@"oh that is all right",@"how are you this time,we have not been seen about 20 days",@"yeah how about planing a meeting this friday,drink some wine",@"Hey man,i see you at KFC in the morning and i told to you find that is not you ,actually it is davin and lucy",@"oh in the morning i was in my house watching tv with my girl friend",@"oh i was wrong",@"oh that is all right",@"how are you this time,we have not been seen about 20 days",@"yeah how about planing a meeting this friday,drink some wine",@"Hey man,i see you at KFC in the morning and i told to you find that is not you ,actually it is davin and lucy",@"oh in the morning i was in my house watching tv with my girl friend",@"oh i was wrong",@"oh that is all right",@"how are you this time,we have not been seen about 20 days",@"yeah how about planing a meeting this friday,drink some wine"];
     self.title = @"消息";
     self.navigationController.navigationBar.prefersLargeTitles = YES;
     self.tableView.delegate = self;
@@ -34,6 +35,22 @@ static NSString * identifier = @"id";
     return self.textArr.count;
 }
 
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    SectionLabel * dataLabel = [[SectionLabel alloc]init];
+    dataLabel.text = @"2019-02-19";
+    UIView * contentView = [[UIView alloc]init];
+    [contentView addSubview:dataLabel];
+    [dataLabel.centerXAnchor constraintEqualToAnchor:contentView.centerXAnchor].active = YES;
+    [dataLabel.centerYAnchor constraintEqualToAnchor:contentView.centerYAnchor].active = YES;
+    return contentView;
+    
+    
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+
+    return 50;
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     AutoSizingCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
