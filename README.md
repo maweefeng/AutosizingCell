@@ -1,6 +1,6 @@
 # AutosizingCell
 
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1g125to6scgj30ea0osabt.jpg)
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1g12acmmawaj30ea0oswgo.jpg)
 
 轻松实现聊天界面的简单搭建 
 
